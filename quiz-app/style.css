@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #590696;
+}
+.container {
+  background-color: #f9f3ee;
+  width: 80vw;
+  padding: 1rem;
+  box-shadow: 0 0 10px 5px;
+  border-radius: 5px;
+}
+
+.btn-grid {
+  display: grid;
+}
+.btn {
+  margin-top: 1rem;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  box-shadow: 0 0 2px 0px;
+  cursor: pointer;
+}
+.btn:last-child {
+  margin-bottom: 1rem;
+}
+
+.start-btn,
+.next-btn {
+  background-color: #500983;
+  color: white;
+  width: 25vw;
+  margin: 0;
+  padding: 0.5rem;
+}
+.controllers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.start-btn:hover {
+  background-color: hsl(275, 98%, 16%);
+}
+.next-btn:hover {
+  background-color: hsl(275, 98%, 16%);
+}
+.correct {
+  background-color: #5fd068;
+  border: none;
+}
+.wrong {
+  background-color: #da1212;
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+@media (min-width: 500px) {
+  .container {
+    width: 500px;
+  }
+}
